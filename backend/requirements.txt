@@ -1,0 +1,25 @@
+fastapi
+uvicorn[standard]
+
+# Database
+sqlalchemy
+pymysql
+
+# Environment variables
+python-dotenv
+
+# Machine Learning
+numpy
+scikit-learn
+joblib
+
+# Video & Signal Processing
+opencv-python
+scipy
+
+# Authentication & Security
+passlib[bcrypt]
+python-jose
+
+# Utilities
+python-multipart

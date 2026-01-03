@@ -1,0 +1,94 @@
+# ===============================
+# Python
+# ===============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+
+# ===============================
+# Virtual Environment
+# ===============================
+venv/
+.env
+.env.*
+.python-version
+
+# ===============================
+# Logs
+# ===============================
+*.log
+uvicorn.log
+
+# ===============================
+# Machine Learning Models
+# ===============================
+*.pkl
+*.joblib
+*.h5
+models/
+checkpoints/
+
+# ===============================
+# Uploads (STRICT CONTROL)
+# ===============================
+
+# Ignore everything in uploads
+uploads/*
+
+# Allow profiles folder
+!uploads/profiles/
+
+# Allow ONLY default avatar
+!uploads/profiles/default_avatar.png
+
+# Ignore all other profile images
+uploads/profiles/*
+
+# Ignore uploaded videos
+uploads/videos/
+
+# ===============================
+# User Media
+# ===============================
+*.mp4
+*.avi
+*.mov
+*.jpg
+*.jpeg
+*.png
+
+# ===============================
+# Databases
+# ===============================
+*.db
+*.sqlite3
+
+# ===============================
+# Jupyter / Colab
+# ===============================
+.ipynb_checkpoints/
+*.ipynb
+
+# ===============================
+# Frontend
+# ===============================
+node_modules/
+dist/
+build/
+
+# ===============================
+# IDE / OS
+# ===============================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Secrets
+# ===============================
+config.yaml
+secrets.json
