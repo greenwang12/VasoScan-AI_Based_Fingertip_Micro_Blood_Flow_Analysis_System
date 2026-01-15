@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top, #0f2027, #000);
+  color: white;
+}
+
+.splash-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.splash-logo {
+  width: 140px;
+  animation: pulse 2s infinite;
+}
+
+.splash-title {
+  font-size: 3rem;
+  margin-top: 1rem;
+  background: linear-gradient(90deg, #00e5ff, #00bcd4);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.splash-subtitle {
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  background: linear-gradient(135deg, #000000, #008c99);
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* LEFT SIDE */
+.auth-left {
+  flex: 1;
+  padding: 80px;
+}
+
+.auth-left h1 {
+  font-size: 48px;
+  color: #00f0ff;
+}
+
+.auth-left p {
+  max-width: 420px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* RIGHT SIDE */
+.auth-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* GLASS CARD */
+.glass-card {
+  width: 420px;
+  padding: 40px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+.glass-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+.glass-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* TWO COLUMN ROW */
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+/* BUTTON */
+.glass-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #00e5ff;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* SWITCH TEXT */
+.switch-text {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.switch-text a {
+  color: #00f0ff;
+  text-decoration: none;
+}

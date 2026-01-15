@@ -1,0 +1,142 @@
+.dashboard-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0b3c3f, #000);
+  color: #fff;
+}
+
+/* HEADER */
+.dashboard-header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+}
+
+.profile-avatar {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* BODY */
+.dashboard-body {
+  display: flex;
+}
+
+/* SIDEBAR */
+.dashboard-sidebar {
+  width: 260px;
+  min-height: calc(100vh - 64px);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  padding: 20px;
+  transition: width 0.3s ease;
+}
+
+.dashboard-sidebar.closed {
+  width: 70px;
+}
+
+.profile-card {
+  margin-bottom: 24px;
+}
+
+.email {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.sidebar-menu button {
+  width: 100%;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sidebar-menu button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.logout {
+  color: #ff6b6b;
+}
+
+/* MAIN CONTENT */
+.dashboard-content {
+  flex: 1;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* ROWS */
+.row {
+  display: flex;
+  gap: 24px;
+}
+
+.two-col > .card {
+  flex: 1;
+}
+
+/* CARDS */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+}
+
+.card {
+  padding: 22px;
+  min-height: 180px;
+}
+
+/* BUTTON */
+.primary {
+  margin-top: 15px;
+  padding: 10px 16px;
+  background: #0aa6a6;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* ============================= */
+/* FULL WIDTH GRAPH & OUTCOMES   */
+/* ============================= */
+
+/* Make graph row span full content width */
+.graph-row {
+  width: 100%;
+}
+
+/* Remove any max-width limitation */
+.graph-card {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Ensure chart container stretches fully */
+.graph-container {
+  width: 100%;
+  height: 420px; /* you can adjust height only if needed */
+}
+
+/* Make Possible Outcomes full width */
+.dashboard-content .row:last-child .card {
+  width: 100%;
+  max-width: 100%;
+}
